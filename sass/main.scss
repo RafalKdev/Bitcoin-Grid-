@@ -13,13 +13,18 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font-family: "Cinzel", serif;
   font-family: "Raleway", sans-serif;
   font-size: 1.6rem;
   color: $white;
   background-color: $dark;
 }
-
+.wrapper {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+}
+// font-family: "Cinzel", serif;
 @import "./small";
 @import "./medium";
 @import "./large";
+@import "./header";

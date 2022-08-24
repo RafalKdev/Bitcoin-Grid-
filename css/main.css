@@ -13,9 +13,94 @@ html {
 }
 
 body {
-  font-family: "Cinzel", serif;
   font-family: "Raleway", sans-serif;
   font-size: 1.6rem;
   color: #fff;
   background-color: #232323;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.company__name {
+  margin-bottom: 0.5em;
+  font-size: 3rem;
+  color: #d6c78e;
+  font-family: "Cinzel", serif;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.header .header__text {
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  grid-row: 2/3;
+  grid-column: 1/3;
+  padding: 2em;
+}
+.header .header__text p {
+  font-weight: 200;
+}
+.header .header__img {
+  position: relative;
+  grid-column: 1/3;
+  grid-row: 1/2;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/bitcoin-sm.jpg);
+  background-position: center;
+  background-size: cover;
+  -webkit-filter: sepia();
+          filter: sepia();
+}
+.header .header__shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.header .header__arrow {
+  display: none;
+}
+.header .header__bg-icon-one,
+.header .header__bg-icon-two {
+  position: absolute;
+  opacity: 0.05;
+  z-index: -5;
+}
+.header .header__bg-icon-two {
+  display: none;
+}
+.header .header__bg-icon-one {
+  bottom: 2em;
+  right: -3em;
+  width: 50%;
+  -webkit-animation: rotate-right 55s infinite linear;
+          animation: rotate-right 55s infinite linear;
+}
+.header .hamburger {
+  position: absolute;
+  top: 3em;
+  left: 1em;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 500;
+}
+.header .hamburger-inner,
+.header .hamburger-inner::after,
+.header .hamburger-inner::before {
+  background-color: white;
 }/*# sourceMappingURL=main.css.map */
