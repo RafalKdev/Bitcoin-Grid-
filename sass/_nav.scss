@@ -1,0 +1,38 @@
+.nav {
+  &__mobile {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: $white;
+    z-index: 10;
+    transform: translateX(-102%);
+    transition: transform 0.3s;
+
+    &--active {
+      transform: translate(0);
+    }
+  }
+  &__desktop {
+    display: none;
+  }
+  .nav__link {
+    position: relative;
+    display: inline-block;
+    margin: 0.5em;
+    padding: 0.5em;
+    font-size: 2.3rem;
+    color: $darker;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color 1s;
+  }
+  .nav__link:hover {
+    color: $gold;
+  }
+}
