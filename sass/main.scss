@@ -1,5 +1,6 @@
 @import "./colors";
 @import "./animation";
+
 *,
 *::before,
 *::after {
@@ -24,6 +25,7 @@ body {
 }
 // font-family: "Cinzel", serif;
 @import "./small";
+@import "./cards";
 @import "./medium";
 @import "./header";
 @import "./nav";
