@@ -1,0 +1,58 @@
+@media (min-width: 576px) {
+  .info {
+    grid-template-areas:
+      "title box"
+      "title box"
+      "title box";
+    padding: 10em 2em;
+
+    .info__box {
+      display: grid;
+      justify-content: end;
+    }
+
+    .info__title {
+      padding: 0 1em;
+    }
+
+    .info__box-text,
+    .info__box-img {
+      max-width: 500px;
+    }
+
+    .info__bg-icon {
+      position: absolute;
+      display: block;
+      opacity: 0.3;
+      z-index: -5;
+
+      &--one {
+        top: 14%;
+        width: 20%;
+        transform: rotate(15deg);
+        animation: rotate-right 160s infinite linear;
+      }
+      &--two {
+        bottom: 15%;
+        width: 30%;
+        left: 5%;
+        transform: rotate(15deg);
+        animation: rotate-left 140s infinite linear;
+      }
+      &--three {
+        top: 30%;
+        width: 35%;
+        left: 16%;
+        transform: rotate(15deg);
+        animation: rotate-left 160s infinite linear;
+      }
+      &--four {
+        bottom: 35%;
+        width: 15%;
+        left: 5%;
+        transform: rotate(15deg);
+        animation: rotate-right 140s infinite linear;
+      }
+    }
+  }
+}

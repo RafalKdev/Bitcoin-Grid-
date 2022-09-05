@@ -24,9 +24,12 @@ body {
   width: 100%;
 }
 // font-family: "Cinzel", serif;
-@import "./small";
 @import "./cards";
-@import "./medium";
 @import "./header";
 @import "./nav";
+@import "./invest";
+@import "./plans";
+@import "./newsletter";
+@import "./small";
+@import "./medium";
 @import "./large";

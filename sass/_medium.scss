@@ -18,4 +18,21 @@
       }
     }
   }
+
+  .plans {
+    padding: 8em 2em;
+
+    .plans__box {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      align-items: center;
+    }
+    .plans__box-item {
+      margin: 0 1em;
+    }
+    .plans__item-name {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
 }

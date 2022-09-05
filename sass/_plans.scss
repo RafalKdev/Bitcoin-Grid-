@@ -1,0 +1,31 @@
+.plans {
+  padding: 6em 2em;
+  background-color: $darker;
+
+  .plans__box {
+    margin: 2em 0;
+    padding: 2em;
+    text-align: center;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    background-color: $dark;
+    cursor: pointer;
+    transition: border 0.5s;
+
+    &:hover {
+      background-color: $darker;
+      border: 1px solid gold;
+    }
+  }
+
+  .plans__item {
+    margin: 1em 0;
+  }
+  .plans__item-icon {
+    width: 50px;
+  }
+  .plans__item-name {
+    font-size: 1.8rem;
+    color: $gold;
+  }
+}
